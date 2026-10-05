@@ -1,0 +1,17 @@
+/*
+Theme Name: Setinel Tech
+Theme URI: https://setineltech.io
+Author: Setinel Tech Team
+Author URI: https://setineltech.io
+Description: A cutting-edge, vibrant high-contrast WordPress theme for modern digital agencies specializing in Web Development, Mobile App Development, and Mission-Critical Web Handling & Cloud DevOps.
+Version: 1.0.0
+Requires at least: 5.8
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: setinel-tech
+Tags: agency, technology, dark-mode, portfolio, responsive-layout, custom-menu, block-patterns, high-contrast
+*/
+
+@import url('assets/css/style.css');

@@ -1,0 +1,20 @@
+{
+  "name": "setinel-tech-website",
+  "version": "1.0.0",
+  "description": "Setinel Tech - Web Engineering, App Development & 24/7 Web Handling Agency Website & WordPress Theme",
+  "scripts": {
+    "preview": "python3 preview/serve.py",
+    "package": "python3 -c \"import zipfile, os; zipf = zipfile.ZipFile('setinel-tech-theme.zip', 'w', zipfile.ZIP_DEFLATED); [zipf.write(os.path.join(r, f), os.path.relpath(os.path.join(r, f), '.')) for r, d, files in os.walk('setinel-tech-theme') for f in files]; print('Updated setinel-tech-theme.zip')\""
+  },
+  "keywords": [
+    "wordpress",
+    "wordpress-theme",
+    "web-development",
+    "app-development",
+    "web-handling",
+    "devops",
+    "setinel-tech"
+  ],
+  "author": "Setinel Tech Team",
+  "license": "GPL-2.0-or-later"
+}
