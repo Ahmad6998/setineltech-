@@ -16,10 +16,10 @@
         <div class="case-studies-grid">
             <!-- Case Study 1 -->
             <div class="case-card">
-                <div class="case-card-img" style="background: radial-gradient(circle at center, #2b1a04, #0b0d13);">
+                <div class="case-card-img">
                     <div style="text-align: center;">
-                        <span style="font-size: 2.5rem;">💳</span>
-                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gold-light); margin-top: 6px;">FINTECH MOBILE APP</div>
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                        <div class="case-card-label">FINTECH MOBILE APP</div>
                     </div>
                 </div>
                 <div class="case-card-body">
@@ -35,10 +35,10 @@
 
             <!-- Case Study 2 -->
             <div class="case-card">
-                <div class="case-card-img" style="background: radial-gradient(circle at center, #3b2406, #0b0d13);">
+                <div class="case-card-img">
                     <div style="text-align: center;">
-                        <span style="font-size: 2.5rem;">⚡</span>
-                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gold-light); margin-top: 6px;">ENTERPRISE E-COMMERCE</div>
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                        <div class="case-card-label">ENTERPRISE E-COMMERCE</div>
                     </div>
                 </div>
                 <div class="case-card-body">
@@ -54,10 +54,10 @@
 
             <!-- Case Study 3 -->
             <div class="case-card">
-                <div class="case-card-img" style="background: radial-gradient(circle at center, #261904, #0b0d13);">
+                <div class="case-card-img">
                     <div style="text-align: center;">
-                        <span style="font-size: 2.5rem;">🛡</span>
-                        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--gold-light); margin-top: 6px;">MISSION-CRITICAL INFRA</div>
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                        <div class="case-card-label">MISSION-CRITICAL INFRA</div>
                     </div>
                 </div>
                 <div class="case-card-body">

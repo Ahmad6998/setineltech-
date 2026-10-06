@@ -78,7 +78,7 @@ get_header();
         </div>
         <div class="deep-dive-visual">
             <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet-light); margin-bottom: 10px;">// app-delivery-phases</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.7;">
+            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.7;">
                 1. UX Flow & Interactive Figma Prototypes<br>
                 2. Core Architecture, API Contracts & State Management<br>
                 3. Device Hardware Integration (Camera, GPS, Biometrics)<br>

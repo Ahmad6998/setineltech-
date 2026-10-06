@@ -5,7 +5,7 @@
  * @package Setinel_Tech
  */
 ?>
-<section id="tech-stack" class="section-spacing" style="background: rgba(11, 13, 19, 0.8);">
+<section id="tech-stack" class="section-spacing tech-stack-section">
     <div class="container">
         <div class="section-header">
             <div class="badge">Battle-Tested Stacks</div>
