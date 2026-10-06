@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SETINEL_TECH_VERSION', '1.4.0');
+define('SETINEL_TECH_VERSION', '1.7.3');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -157,9 +157,42 @@ function setinel_tech_customize_register($wp_customize) {
         'type'     => 'text',
     ));
 
+    // Facebook URL
+    $wp_customize->add_setting('setinel_facebook_url', array(
+        'default'           => 'https://facebook.com',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('setinel_facebook_url', array(
+        'label'    => __('Facebook URL', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'url',
+    ));
+
+    // LinkedIn URL
+    $wp_customize->add_setting('setinel_linkedin_url', array(
+        'default'           => 'https://linkedin.com',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('setinel_linkedin_url', array(
+        'label'    => __('LinkedIn URL', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'url',
+    ));
+
+    // Instagram URL
+    $wp_customize->add_setting('setinel_instagram_url', array(
+        'default'           => 'https://instagram.com',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('setinel_instagram_url', array(
+        'label'    => __('Instagram URL', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'url',
+    ));
+
     // Hero Tagline
     $wp_customize->add_setting('setinel_hero_tagline', array(
-        'default'           => 'Architecting Next-Gen Web, Mobile & Cloud Systems',
+        'default'           => 'Empowering Businesses Through Advanced Engineering & Mission-Critical Architecture',
         'sanitize_callback' => 'sanitize_text_field',
     ));
     $wp_customize->add_control('setinel_hero_tagline', array(
@@ -177,10 +210,17 @@ function setinel_tech_default_menu() {
     $home_url = esc_url(home_url('/'));
     echo '<ul class="nav-menu">';
     echo '<li><a href="' . $home_url . '" class="nav-link">' . esc_html__('Home', 'setinel-tech') . '</a></li>';
-    echo '<li><a href="' . $home_url . '#services" class="nav-link">' . esc_html__('Services', 'setinel-tech') . '</a></li>';
-    echo '<li><a href="' . $home_url . '#handling" class="nav-link">' . esc_html__('Web Handling', 'setinel-tech') . '</a></li>';
-    echo '<li><a href="' . $home_url . '#tech-stack" class="nav-link">' . esc_html__('Tech Stack', 'setinel-tech') . '</a></li>';
-    echo '<li><a href="' . $home_url . '#case-studies" class="nav-link">' . esc_html__('Case Studies', 'setinel-tech') . '</a></li>';
-    echo '<li><a href="' . $home_url . '#contact" class="nav-link">' . esc_html__('Contact', 'setinel-tech') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/about')) . '" class="nav-link">' . esc_html__('About', 'setinel-tech') . '</a></li>';
+    echo '<li class="nav-item-dropdown">';
+    echo '<a href="' . $home_url . '#services" class="nav-link nav-link-dropdown">' . esc_html__('Services', 'setinel-tech') . ' <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>';
+    echo '<ul class="dropdown-menu">';
+    echo '<li><a href="' . esc_url(home_url('/web-development')) . '">' . esc_html__('Website Development', 'setinel-tech') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/app-development')) . '">' . esc_html__('Custom Software & App Development', 'setinel-tech') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/web-handling')) . '">' . esc_html__('24/7 Web Handling & DevSecOps', 'setinel-tech') . '</a></li>';
+    echo '</ul>';
+    echo '</li>';
+    echo '<li><a href="' . $home_url . '#why-us" class="nav-link">' . esc_html__('Why Us', 'setinel-tech') . '</a></li>';
+    echo '<li><a href="' . $home_url . '#case-studies" class="nav-link">' . esc_html__('Careers', 'setinel-tech') . '</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/contact')) . '" class="nav-link">' . esc_html__('Contact Us', 'setinel-tech') . '</a></li>';
     echo '</ul>';
 }

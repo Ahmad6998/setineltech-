@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Setinel Tech | Web Engineering, App Development & 24/7 Web Handling</title>
-  <meta name="description" content="Setinel Tech builds resilient custom web platforms, native & cross-platform mobile apps, and provides 24/7 mission-critical web handling with guaranteed SLAs.">
+  <title>Setinel Tech | Enterprise Web Engineering, Mobile Systems & 24/7 Web Handling</title>
+  <meta name="description" content="Setinel Tech provides high-concurrency web engineering, custom mobile apps, and mission-critical 24/7 web handling with guaranteed 99.99% uptime SLAs.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -17,547 +17,812 @@
   <meta name="theme-color" content="#d97706">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="assets/css/style.css?v=12">
+  <link rel="stylesheet" href="assets/css/style.css?v=28">
 </head>
 <body>
   <div class="cyber-bg-glow"></div>
 
-  <!-- Header -->
+  <!-- Site Header (TowerTech Style Top Bar & Navigation) -->
   <header class="site-header">
-    <div class="container header-container">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-icon">
-          <img src="assets/images/logo-icon.png?v=4" alt="Setinel Tech" width="40" height="40" style="width: 40px; height: 40px; max-width: 40px; max-height: 40px; object-fit: contain; display: block;">
-        </div>
-        <span>SETINEL<span class="emerald-text">TECH</span></span>
-      </a>
-
-      <nav class="site-navigation" aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#handling" class="nav-link">Web Handling</a></li>
-          <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
-          <li><a href="#case-studies" class="nav-link">Case Studies</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+    <div class="header-top">
+      <div class="container header-top-container">
+        <ul class="header-links">
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="icon" aria-label="Facebook" title="Facebook">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon" aria-label="LinkedIn" title="LinkedIn">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="icon" aria-label="Instagram" title="Instagram">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </li>
+          <li><a href="#contact" class="header-action-link">Schedule Call</a></li>
+          <li><a href="#contact" class="header-action-link">Get a free quote</a></li>
+          <li class="header-phone-item"><a href="tel:+923000941144" class="header-phone-link">+92 300 0941144</a></li>
         </ul>
-      </nav>
+      </div>
+    </div>
 
-      <div class="nav-actions">
-        <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." class="header-whatsapp-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp" aria-label="WhatsApp Chat">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.23-4.38c0-4.54 3.7-8.24 8.24-8.24m4.53 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.3"/>
-          </svg>
+    <div class="header-main">
+      <div class="container header-container">
+        <a href="index.html" class="brand-logo" aria-label="Setinel Tech">
+          <div class="brand-icon">
+            <img src="assets/images/logo-icon.png?v=5" alt="Setinel Tech" width="40" height="40" style="width: 40px; height: 40px; max-width: 40px; max-height: 40px; object-fit: contain; display: block;">
+          </div>
+          <div class="brand-text-holder">
+            <span class="brand-name">SETINEL<span class="emerald-text">TECH</span></span>
+          </div>
         </a>
-        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme Mode" title="Toggle Light/Dark Theme">
-          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
-        <a href="#contact" class="btn btn-primary btn-sm">
-          <span>Get in Touch</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-        <button class="mobile-toggle" aria-label="Toggle navigation">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+
+        <nav class="site-navigation" aria-label="Main Navigation">
+          <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item-dropdown">
+              <a href="#services" class="nav-link nav-link-dropdown">Services <svg class="dropdown-chevron" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <ul class="dropdown-menu">
+                <li><a href="web-development.html">Website Development</a></li>
+                <li><a href="app-development.html">Custom Software &amp; Web App Development</a></li>
+                <li><a href="web-handling.html">24/7 Web Handling &amp; DevSecOps</a></li>
+              </ul>
+            </li>
+            <li><a href="#why-us" class="nav-link">Why Us</a></li>
+            <li><a href="#case-studies" class="nav-link">Careers</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="mobile-toggle" aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="badge">
-              <span class="badge-pulse"></span>
-              <span>ENTERPRISE DIGITAL ENGINEERING</span>
+    <!-- Visual Section (Tower Tech Hero with Gold 3D Tower & Animated Canvas) -->
+    <section class="visual-section">
+      <div class="bg-image">
+        <img src="assets/images/bg-visual-theme.webp" alt="Setinel Tech Intelligent Solutions" width="1920" height="1080">
+      </div>
+      <canvas id="hero-banner-canvas"></canvas>
+      <div class="container visual-container">
+        <div class="visual-text-box">
+          <h1 class="hero-tower-title">
+            Delivering <br>
+            <span class="hero-highlight-box">
+              Intelligent Solutions
+              <span class="node node-tl"></span>
+              <span class="node node-tr"></span>
+              <span class="node node-bl"></span>
+              <span class="node node-br"></span>
+            </span>
+          </h1>
+          <p class="hero-tower-desc">
+            We believe in creating enduring value for our stakeholders through meaningful and intelligent technological solutions by fostering our digital foundations to fullest potential.
+          </p>
+          <div class="hero-tower-btn-wrap">
+            <a href="#about-value" class="btn-see-detail">SEE DETAIL</a>
+          </div>
+        </div>
+
+        <div class="btn-holder">
+          <a href="#about-value" class="btn-explore" aria-label="Scroll to discover more">
+            <div class="mouse"></div>
+            <div class="arrow-scroll">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <h1>Architecting Next-Gen <span class="gradient-text">Web, Mobile & Cloud Systems</span></h1>
-            <p class="hero-description">
-              Setinel Tech empowers modern businesses with resilient web development, high-performance mobile apps, and mission-critical 24/7 web handling. Zero downtime. Bulletproof code.
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: Creating Value & Ensuring Customer Success (.section-frame with TowerTech Layout) -->
+    <section id="about-value" class="section-frame">
+      <div class="pattern-bg">
+        <img src="assets/images/pattern.webp" alt="Background pattern" width="1920" height="1030">
+      </div>
+      <div class="container">
+        <div class="section-image-head">
+          <div class="header-textbox">
+            <h2>CREATING VALUE &amp; ENSURING CUSTOMER SUCCESS</h2>
+            <span class="sign-line"></span>
+            <h5>TECH TRANSFORMATION EXPERTS</h5>
+            <p>
+              Setinel Tech is an avant-garde technology enterprise that specializes in the conception and implementation of groundbreaking software solutions. With an ardent focus on cutting-edge technologies, Setinel Tech endeavors to reshape industries and empower businesses in attaining their objectives within the digital epoch.
             </p>
-            <div class="hero-cta-group">
-              <a href="#contact" class="btn btn-primary">
-                <span>Request a Proposal</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
+            <a href="about.html" title="Read more about Setinel Tech" class="btn-read-more">
+              <span class="square-btn"></span>
+              <span>READ MORE</span>
+            </a>
+          </div>
+
+          <div class="visual-illustration-holder">
+            <div class="image-globes">
+              <div class="globe-box">
+                <img src="assets/images/globe-1.webp" alt="Pendant lamp decorative light" width="65" height="352">
+              </div>
+              <div class="globe-box">
+                <img src="assets/images/globe-2.webp" alt="Pendant lamp decorative light" width="65" height="352">
+              </div>
+            </div>
+            <div class="header-image">
+              <img src="assets/images/ttl-home-section.gif" alt="Setinel Tech Transformation Platform" width="1040" height="734">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Why Choose Setinel Tech? (.section-why 6-Pillar Grid with .dot-dash) -->
+    <section id="why-us" class="section-why">
+      <div class="container">
+        <div class="section-head">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">WHY PARTNER WITH US</span>
+          <h2>Why Choose Setinel Tech?</h2>
+          <div class="dot-dash"></div>
+          <p>We blend deep institutional engineering discipline with rapid execution, giving you complete confidence in your digital foundation.</p>
+        </div>
+
+        <ul class="features-list">
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
                 </svg>
-              </a>
-              <a href="#services" class="btn btn-secondary">
-                <span>Our 3 Core Pillars</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="hero-preview">
-            <div class="hero-preview-card">
-              <div class="terminal-header">
-                <div class="terminal-dots">
-                  <span class="terminal-dot dot-red"></span>
-                  <span class="terminal-dot dot-yellow"></span>
-                  <span class="terminal-dot dot-green"></span>
-                </div>
-                <div class="terminal-title">setinel-ops-cluster-01.sys</div>
-                <div style="font-size: 0.75rem; color: var(--emerald-light); font-weight: 600;">ACTIVE</div>
               </div>
-              <div class="terminal-body">
-                <div class="term-line">
-                  <span class="term-prompt">$</span>
-                  <span class="term-cmd">setinel-guard --check-health --env=production</span>
-                </div>
-                <div style="color: var(--text-dark); margin-bottom: 12px; font-size: 0.8rem;">
-                  [OK] DNS Cluster Cloudflare Enterprise: Synced<br>
-                  [OK] SSL/TLS Edge Certificates: Valid (Auto-renewed)<br>
-                  [OK] Core Web Vitals: LCP 0.8s, FID 12ms, CLS 0.00
-                </div>
-
-                <div class="term-status-grid">
-                  <div class="term-stat-box">
-                    <div class="term-stat-label">System Uptime</div>
-                    <div class="term-stat-val">99.998%</div>
-                  </div>
-                  <div class="term-stat-box">
-                    <div class="term-stat-label">Global Latency</div>
-                    <div class="term-stat-val" id="stat-latency">18.4ms</div>
-                  </div>
-                  <div class="term-stat-box">
-                    <div class="term-stat-label">Throughput</div>
-                    <div class="term-stat-val" id="stat-active-reqs">1,480 req/s</div>
-                  </div>
-                  <div class="term-stat-box">
-                    <div class="term-stat-label">Security Shield</div>
-                    <div class="term-stat-val" style="color: var(--violet-light);">Active (Zero Threat)</div>
-                  </div>
-                </div>
-              </div>
+              <h5>Tailored Enterprise Architecture</h5>
+              <p>We build customized, modular codebases designed specifically for your organization's unique workflows and growth trajectory, eliminating rigid constraints.</p>
             </div>
-          </div>
-        </div>
+          </li>
+
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h5>Zero-Trust Cyber Defense</h5>
+              <p>Security is embedded at every layer—from OWASP Top 10 hardening and edge WAF rules to database encryption and rigorous automated vulnerability scans.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <h5>High-Concurrency Cloud Optimization</h5>
+              <p>Architected to seamlessly absorb viral traffic spikes and millions of daily API transactions with zero latency degradation or service degradation.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h5>End-to-End DevOps &amp; CI/CD</h5>
+              <p>Automated build verification, containerized deployments, and instant rollback pipelines that allow your team to ship updates safely and frequently.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h5>Guaranteed SLAs &amp; 24/7 Monitoring</h5>
+              <p>Backed by strict service-level agreements and proactive SRE monitoring to catch anomalies before they impact your end-users or revenue streams.</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="why-us-holder">
+              <div class="ico-holder">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h5>Dedicated Senior Engineering Squads</h5>
+              <p>No junior handoffs. You work directly with battle-tested senior engineers who bring deep domain knowledge and decisive technical leadership.</p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- Metrics Strip -->
-    <div class="metrics-strip">
+    <!-- SECTION 3: Accomplishments Figure Block (.figure-block Counters) -->
+    <section class="figure-block">
       <div class="container">
-        <div class="metrics-grid">
-          <div class="metric-item">
-            <div class="metric-number">99.99%</div>
-            <div class="metric-label">Guaranteed Uptime SLA</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-number">150+</div>
-            <div class="metric-label">Digital Platforms Built</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-number">&lt; 250ms</div>
-            <div class="metric-label">Average Edge Response</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-number">24/7/365</div>
-            <div class="metric-label">Autonomous Web Handling</div>
-          </div>
+        <div class="figure-header">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">PROVEN RESULTS</span>
+          <h2>Our Accomplishments in Numbers</h2>
+          <div class="dot-dash"></div>
         </div>
+
+        <ul class="figure-holder">
+          <li>
+            <strong class="counter-val" data-count="150" data-suffix="+">150+</strong>
+            <span class="subtitle">Projects Delivered With Excellence</span>
+          </li>
+          <li>
+            <strong class="counter-val" data-count="99.99" data-suffix="%">99.99%</strong>
+            <span class="subtitle">Infrastructure Uptime Maintained</span>
+          </li>
+          <li>
+            <strong class="counter-val" data-count="50" data-suffix="M+">50M+</strong>
+            <span class="subtitle">Daily Cloud Requests Handled</span>
+          </li>
+          <li>
+            <strong class="counter-val" data-count="100" data-suffix="%">100%</strong>
+            <span class="subtitle">Client Satisfaction &amp; Zero Breaches</span>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <!-- Services Section -->
-    <section id="services" class="section-spacing">
+    <!-- SECTION 4: Services We Offer (.section-services Cards Grid) -->
+    <section id="services" class="section-services">
       <div class="container">
-        <div class="section-header">
-          <div class="badge badge-emerald">Specialized Engineering</div>
-          <h2 class="section-title">Engineered For <span class="gradient-text">Absolute Dominance</span></h2>
-          <p>We do not build ordinary websites. We construct resilient digital products that scale smoothly, load instantly, and remain invulnerable.</p>
+        <div class="header-textbox">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">CORE CAPABILITIES</span>
+          <h2>Services We Offer</h2>
+          <span class="sign-line"></span>
         </div>
 
-        <div class="services-grid">
+        <div class="services-content">
+          <h5>Comprehensive Technology Engineering Tailored for Enterprise Scalability and Maximum Performance</h5>
+          <div class="text-block-blue">
+            <p>From modern cloud-native web architectures and high-impact mobile apps to round-the-clock infrastructure handling, our cross-functional squads deliver resilient, scalable, and defensible digital assets.</p>
+          </div>
+        </div>
+
+        <div class="services-grid-new">
           <!-- Service 1: Web Development -->
-          <div class="glass-card service-card">
-            <div class="service-icon-wrap icon-violet">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h5>Enterprise Web &amp; SaaS Development</h5>
+              <div class="service-para">
+                <p>Architecting robust, ultra-fast web applications, customer portals, and headless architectures with Next.js, React, Node.js, and modern PHP frameworks.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Micro-frontend architectures</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Sub-second page speed &amp; Core Web Vitals</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Headless CMS &amp; API-first design</li>
+              </ul>
             </div>
-            <h3>Web Development</h3>
-            <p>Bespoke web architectures built with modern frameworks and enterprise WordPress. We optimize every millisecond of load time for maximum conversion.</p>
-            <ul class="service-feature-list">
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Custom High-Performance WordPress & Next.js</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>E-Commerce Engines & Stripe Integration</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Full-Stack SaaS & Scalable REST/GraphQL APIs</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Perfect 95+ Google Core Web Vitals Score</span>
-              </li>
-            </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">WordPress</span>
-              <span class="tech-tag">React / Next.js</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Tailwind</span>
-            </div>
-            <a href="web-development.html" class="btn btn-secondary btn-sm" style="margin-top: 20px;">Deep Dive Web Dev &rarr;</a>
+            <a href="web-development.html" class="button btn-grey" style="width: 100%; text-align: center;">Explore Web Engineering</a>
           </div>
 
-          <!-- Service 2: App Development -->
-          <div class="glass-card service-card">
-            <div class="service-icon-wrap icon-emerald">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                <line x1="12" y1="18" x2="12.01" y2="18"></line>
-              </svg>
+          <!-- Service 2: Mobile Apps -->
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                  <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                </svg>
+              </div>
+              <h5>Native &amp; Cross-Platform Mobile Apps</h5>
+              <div class="service-para">
+                <p>Building intuitive, fluid mobile experiences across iOS and Android with React Native and Flutter. Offline-first architectures with bi-directional syncing.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> 60 FPS smooth native interactions</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Biometric security &amp; local encrypted storage</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> App Store &amp; Play Store release automation</li>
+              </ul>
             </div>
-            <h3>App Development</h3>
-            <p>Fluid, native and cross-platform mobile apps for iOS and Android. Engineered with intuitive UX, offline synchronization, and bank-grade security protocols.</p>
-            <ul class="service-feature-list">
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Cross-Platform React Native & Flutter Apps</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Native iOS (Swift) & Android (Kotlin) Builds</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Biometric Auth, Realtime Push & WebSockets</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>End-to-end App Store & Play Store Deployment</span>
-              </li>
-            </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Flutter</span>
-              <span class="tech-tag">Swift</span>
-              <span class="tech-tag">Firebase / AWS</span>
-            </div>
-            <a href="app-development.html" class="btn btn-secondary btn-sm" style="margin-top: 20px;">Deep Dive App Dev &rarr;</a>
+            <a href="app-development.html" class="button btn-grey" style="width: 100%; text-align: center;">Explore Mobile Engineering</a>
           </div>
 
-          <!-- Service 3: Web Handling & Cloud Ops -->
-          <div class="glass-card service-card">
-            <div class="service-icon-wrap icon-cyan">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
+          <!-- Service 3: 24/7 Web Handling -->
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h5>24/7 Mission-Critical Web Handling</h5>
+              <div class="service-para">
+                <p>Autonomous site reliability engineering, proactive server maintenance, continuous security patching, and instant disaster recovery backed by strict SLAs.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> 15-minute emergency response SLA</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Real-time telemetry &amp; uptime monitoring</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Automated database backups &amp; rollbacks</li>
+              </ul>
             </div>
-            <h3>Web Handling & DevOps</h3>
-            <p>Complete peace of mind. We manage, monitor, patch, and defend your web systems 24/7/365 so you can focus entirely on growing your business revenue.</p>
-            <ul class="service-feature-list">
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>24/7 Real-Time Uptime & Anomaly Monitoring</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Automated Daily Encrypted Offsite Backups</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>DDoS Defense, WAF Firewalls & Malware Scans</span>
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                <span>Speed Optimization, Database Caching & CDN</span>
-              </li>
-            </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">Cloudflare</span>
-              <span class="tech-tag">AWS / DigitalOcean</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">24/7 SLA</span>
+            <a href="web-handling.html" class="button btn-grey" style="width: 100%; text-align: center;">Explore Web Handling</a>
+          </div>
+
+          <!-- Service 4: Cloud Architecture & DevOps -->
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <h5>Cloud DevOps &amp; Infrastructure as Code</h5>
+              <div class="service-para">
+                <p>Architecting multi-region AWS and Google Cloud environments with Terraform, Docker, and Kubernetes for high availability, fault tolerance, and cost control.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Auto-scaling container clusters</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Zero-downtime blue/green deployments</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Cloud spend optimization &amp; FinOps</li>
+              </ul>
             </div>
-            <a href="web-handling.html" class="btn btn-secondary btn-sm" style="margin-top: 20px;">Deep Dive Web Handling &rarr;</a>
+            <a href="#contact" class="button btn-grey" style="width: 100%; text-align: center;">Consult Cloud Architect</a>
+          </div>
+
+          <!-- Service 5: Cyber Defense & WAF -->
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h5>Cyber Defense &amp; Zero-Trust Hardening</h5>
+              <div class="service-para">
+                <p>Defending digital perimeters against automated bot attacks, credential stuffing, zero-day vulnerabilities, and SQL injection with enterprise WAF policies.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Web Application Firewall rule tuning</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> SOC2 &amp; ISO27001 compliance readiness</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> End-to-end payload encryption</li>
+              </ul>
+            </div>
+            <a href="#contact" class="button btn-grey" style="width: 100%; text-align: center;">Request Security Audit</a>
+          </div>
+
+          <!-- Service 6: API & High-Scale Systems -->
+          <div class="services-box-new">
+            <div>
+              <div class="ico-holder">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <h5>API Architecture &amp; Database Optimization</h5>
+              <div class="service-para">
+                <p>Designing high-throughput REST and GraphQL APIs, asynchronous queue architectures (Kafka/RabbitMQ), and sub-millisecond Redis caching layers.</p>
+              </div>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; font-size: 0.88rem; color: var(--text-muted);">
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> High-concurrency event-driven schemas</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> PostgreSQL query indexing &amp; sharding</li>
+                <li style="display: flex; align-items: center; gap: 8px;"><span style="color: var(--gold-light);">✔</span> Third-party payment &amp; ERP integrations</li>
+              </ul>
+            </div>
+            <a href="#contact" class="button btn-grey" style="width: 100%; text-align: center;">Inquire About APIs</a>
           </div>
         </div>
       </div>
     </section>
 
-
-
-    <!-- Web Handling SLA Tiers -->
-    <section id="handling" class="section-spacing">
+    <!-- SECTION 5: Software Engineering Process (.section-procedure 6-Stage Accordion) -->
+    <section id="process" class="section-procedure">
       <div class="container">
-        <div class="section-header">
-          <div class="badge badge-emerald">24/7 Operations & Maintenance</div>
-          <h2 class="section-title">Mission-Critical <span class="gradient-text">Web Handling SLAs</span></h2>
-          <p>Your web infrastructure is your primary business asset. Don't leave it unattended. Our Web Handling service guarantees round-the-clock defense and peak velocity.</p>
+        <div class="section-head">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">HOW WE WORK</span>
+          <h2>Our 6-Stage Engineering Process</h2>
+          <div class="dot-dash"></div>
+          <p>A battle-tested methodology that balances rapid delivery velocity with rigorous architectural stability.</p>
         </div>
 
-        <div class="plans-grid">
-          <!-- Plan 1 -->
-          <div class="glass-card plan-card">
-            <div>
-              <h3 style="margin-bottom: 8px;">Setinel Core</h3>
-              <p style="font-size: 0.9rem; margin-bottom: 24px;">Essential defense and maintenance for modern corporate websites and blogs.</p>
+        <div class="process-tabs-wrap">
+          <!-- Accordion List -->
+          <ul class="process-accordion">
+            <!-- Stage 1 -->
+            <li class="process-acc-item active" data-step="1">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">01</div>
+                  <h5>Discovery &amp; Technical Requirements Gathering</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                We conduct an exhaustive technical discovery: analyzing existing infrastructure, documenting latency bottlenecks, mapping data flows, and defining non-functional requirements such as peak concurrent users and failover tolerances.
+              </div>
+            </li>
 
-              <ul class="service-feature-list">
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>24/7 Uptime & Ping Monitoring</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Weekly Automated Offsite Backups</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Monthly CMS Core & Plugin Audits</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>SSL Certificate Lifecycle Management</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>2 Business Hours SLA Response</span>
-                </li>
-              </ul>
+            <!-- Stage 2 -->
+            <li class="process-acc-item" data-step="2">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">02</div>
+                  <h5>Architecture Design &amp; Threat Modeling</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                Our principal engineers draft full system blueprints, database entity-relationship models, API schemas, and cybersecurity threat vectors before writing a single line of production code.
+              </div>
+            </li>
+
+            <!-- Stage 3 -->
+            <li class="process-acc-item" data-step="3">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">03</div>
+                  <h5>Agile Engineering &amp; Automated CI/CD</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                Bi-weekly sprint execution with transparent GitHub repositories, continuous integration test suites, automated linting, and continuous staging previews for stakeholder verification.
+              </div>
+            </li>
+
+            <!-- Stage 4 -->
+            <li class="process-acc-item" data-step="4">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">04</div>
+                  <h5>Stress Testing &amp; Quality Assurance</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                We simulate peak load scenarios up to 50,000+ simultaneous virtual connections, run automated security penetration audits, verify WCAG accessibility, and ensure sub-second Core Web Vitals.
+              </div>
+            </li>
+
+            <!-- Stage 5 -->
+            <li class="process-acc-item" data-step="5">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">05</div>
+                  <h5>Zero-Downtime Deployment &amp; Cloud Launch</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                Blue-green Kubernetes cluster routing, global CDN warm-up, DNS cutover with zero downtime, and instant automated rollback safeguards should any threshold fail.
+              </div>
+            </li>
+
+            <!-- Stage 6 -->
+            <li class="process-acc-item" data-step="6">
+              <div class="process-acc-header">
+                <div class="left-info">
+                  <div class="step-badge">06</div>
+                  <h5>24/7 Monitoring, SRE Support &amp; Continuous Scaling</h5>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </div>
+              <div class="process-acc-body">
+                Proactive round-the-clock site reliability engineering, telemetry alerting, automated weekly dependency updates, database index optimization, and ongoing architectural scaling.
+              </div>
+            </li>
+          </ul>
+
+          <!-- Dynamic Visual Graphic -->
+          <div class="process-visual-box">
+            <div style="font-size: 0.78rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;" id="process-preview-step">PHASE 01</div>
+            <div class="circle-chart">
+              <span class="chart-inner-icon" id="process-preview-icon">🔍</span>
             </div>
-
-            <a href="#contact" class="btn btn-secondary" style="width: 100%; margin-top: 24px;">Choose Core Care</a>
-          </div>
-
-          <!-- Plan 2 (Featured) -->
-          <div class="glass-card plan-card featured">
-            <span class="plan-ribbon">Most Popular</span>
-            <div>
-              <h3 style="margin-bottom: 8px;">Business Velocity</h3>
-              <p style="font-size: 0.9rem; margin-bottom: 24px;">High-growth web handling for SaaS, eCommerce, and revenue-critical sites.</p>
-
-              <ul class="service-feature-list">
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span><strong>1-Minute</strong> Ping & Anomaly Detection</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Daily Encrypted Cloud Backups</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Active Cloudflare WAF & DDoS Shield</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Redis Cache & Database Tuning</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Dedicated SLA Dev Support Included</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span><strong>15-Minute</strong> Emergency Incident SLA</span>
-                </li>
-              </ul>
+            <h4 id="process-preview-title">Discovery &amp; Technical Requirements</h4>
+            <p id="process-preview-desc">In-depth consultation, system architecture audit, threat vector analysis, and precise technical specification.</p>
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-around; text-align: left;">
+              <div>
+                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Deliverable</span>
+                <strong style="font-size: 0.88rem; color: var(--text-main);">Technical Blueprint</strong>
+              </div>
+              <div>
+                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">SLA Confidence</span>
+                <strong style="font-size: 0.88rem; color: #10b981;">100% Guaranteed</strong>
+              </div>
             </div>
-
-            <a href="#contact" class="btn btn-emerald" style="width: 100%; margin-top: 24px;">Activate Velocity Plan</a>
-          </div>
-
-          <!-- Plan 3 -->
-          <div class="glass-card plan-card">
-            <div>
-              <h3 style="margin-bottom: 8px;">Enterprise Fortress</h3>
-              <p style="font-size: 0.9rem; margin-bottom: 24px;">Bespoke cluster management for high-volume enterprise architectures.</p>
-
-              <ul class="service-feature-list">
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>99.99% Financially-Backed SLA</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Real-Time Hourly Transaction Backups</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Multi-Region Cloud DevOps (AWS/GCP)</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Dedicated Senior DevOps Lead on Call</span>
-                </li>
-                <li>
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-                  <span>Continuous Development & Cloud Optimization</span>
-                </li>
-              </ul>
-            </div>
-
-            <a href="#contact" class="btn btn-secondary" style="width: 100%; margin-top: 24px;">Request Enterprise Custom</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Tech Stack Radar -->
-    <section id="tech-stack" class="section-spacing tech-stack-section">
+    <!-- SECTION 6: Industries We Serve & Client Testimonials (.industries-we-serve) -->
+    <section id="industries" class="industries-we-serve">
       <div class="container">
-        <div class="section-header">
-          <div class="badge">Battle-Tested Stacks</div>
-          <h2 class="section-title">The Setinel <span class="gradient-text">Engineering Arsenal</span></h2>
-          <p>We deploy modern, high-throughput technologies designed for low latency, tight security, and rapid product evolution.</p>
+        <div class="industries-banner">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; display: block;">CROSS-INDUSTRY EXPERTISE</span>
+          <h2>Engineering Solutions Tailored Across 10+ Global Industry Verticals</h2>
         </div>
 
-        <div class="tech-grid">
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--violet-light);">⚡</div>
-            <div class="tech-item-name">WordPress</div>
-            <div class="tech-item-category">Enterprise & Headless</div>
+        <div class="industries-slider-container">
+          <div class="industries-slider-header-bar">
+            <div class="industries-slider-status">
+              <span class="status-dot"></span>
+              <span>Interactive Industry Showcase (Auto-sliding • Swipe or use arrows)</span>
+            </div>
+            <div class="industries-slider-controls">
+              <button class="industries-slider-btn prev" aria-label="Previous Industry">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button class="industries-slider-btn next" aria-label="Next Industry">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
           </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--cyan-accent);">⚛</div>
-            <div class="tech-item-name">Next.js / React</div>
-            <div class="tech-item-category">Ultra-Fast Frontend</div>
+
+          <div class="industries-slider-viewport">
+            <div class="industries-slider-track">
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">💳</div>
+                <strong class="industry-slide-title">FinTech &amp; Banking</strong>
+                <span class="industry-slide-desc">High-throughput core processing, PCI-DSS compliance, and automated settlement engines.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🏥</div>
+                <strong class="industry-slide-title">HealthTech &amp; Care</strong>
+                <span class="industry-slide-desc">HIPAA-compliant EHR portals, telehealth streaming, and medical device analytics.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🛒</div>
+                <strong class="industry-slide-title">E-Commerce &amp; Retail</strong>
+                <span class="industry-slide-desc">Omnichannel POS sync, flash-sale auto-scaling, and headless store architectures.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🚚</div>
+                <strong class="industry-slide-title">Logistics &amp; Supply</strong>
+                <span class="industry-slide-desc">Real-time GPS fleet telemetry, route optimization, and automated dispatch.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🏢</div>
+                <strong class="industry-slide-title">Real Estate &amp; PropTech</strong>
+                <span class="industry-slide-desc">Interactive virtual walkthroughs, automated MLS feeds, and leasing management.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">☁️</div>
+                <strong class="industry-slide-title">SaaS &amp; Cloud Tools</strong>
+                <span class="industry-slide-desc">Multi-tenant Kubernetes microservices, billing integrations, and API gateways.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🎓</div>
+                <strong class="industry-slide-title">EdTech &amp; Learning</strong>
+                <span class="industry-slide-desc">Gamified LMS platforms, live interactive streaming, and student progress engines.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">📡</div>
+                <strong class="industry-slide-title">Telecom &amp; Networks</strong>
+                <span class="industry-slide-desc">Carrier-grade OSS/BSS software, self-care mobile apps, and low-latency billing.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🏭</div>
+                <strong class="industry-slide-title">Industrial IoT</strong>
+                <span class="industry-slide-desc">Edge sensor data pipelines, predictive machine maintenance, and SCADA UI.</span>
+              </div>
+              <div class="industry-slide-item">
+                <div class="industry-slide-icon-wrap">🏛️</div>
+                <strong class="industry-slide-title">Public Sector / GovTech</strong>
+                <span class="industry-slide-desc">FedRAMP/ISO security architectures, digital citizen portals, and e-governance.</span>
+              </div>
+            </div>
           </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--emerald-light);">📱</div>
-            <div class="tech-item-name">React Native</div>
-            <div class="tech-item-category">iOS & Android App</div>
+
+          <div class="industries-slider-dots"></div>
+        </div>
+
+        <!-- Testimonials Cards Grid -->
+        <div style="margin-top: 70px;">
+          <div class="section-head" style="text-align: center; margin-bottom: 40px;">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">CLIENT VOICES</span>
+            <h2 style="font-size: 2.2rem;">Trusted by Engineering &amp; Business Leaders</h2>
+            <div class="dot-dash"></div>
           </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--violet-light);">🎯</div>
-            <div class="tech-item-name">Flutter</div>
-            <div class="tech-item-category">Cross-Platform Mobile</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--emerald-light);">🛡</div>
-            <div class="tech-item-name">Cloudflare</div>
-            <div class="tech-item-category">WAF & Edge CDN</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--cyan-accent);">🐳</div>
-            <div class="tech-item-name">Docker</div>
-            <div class="tech-item-category">Containerized DevOps</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--violet-light);">☁</div>
-            <div class="tech-item-name">AWS & GCP</div>
-            <div class="tech-item-category">Cloud Infrastructure</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--emerald-light);">🚀</div>
-            <div class="tech-item-name">Node.js</div>
-            <div class="tech-item-category">High-Concurrency API</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--cyan-accent);">🍎</div>
-            <div class="tech-item-name">Swift (iOS)</div>
-            <div class="tech-item-category">Native Apple Mobile</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--emerald-light);">🤖</div>
-            <div class="tech-item-name">Kotlin</div>
-            <div class="tech-item-category">Native Android</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--violet-light);">⚡</div>
-            <div class="tech-item-name">Redis & MySQL</div>
-            <div class="tech-item-category">In-Memory Caching & DB</div>
-          </div>
-          <div class="tech-item">
-            <div style="font-size: 1.8rem; color: var(--emerald-light);">🔄</div>
-            <div class="tech-item-name">CI/CD Pipelines</div>
-            <div class="tech-item-category">Automated Releases</div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card-new">
+              <div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                  "Setinel Tech re-architected our transaction processing engine from the ground up. We handled Black Friday volume exceeding 45,000 requests per second with 100% zero downtime and sub-20ms latency."
+                </p>
+              </div>
+              <div class="testimonial-client">
+                <div class="client-avatar">RK</div>
+                <div class="client-info">
+                  <strong>Rehan Khan</strong>
+                  <span>Chief Technology Officer, PayStream Global</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-new">
+              <div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                  "Finding an engineering partner who understands both rapid agile development and strict HIPAA-compliant zero-trust security is rare. Setinel Tech delivered ahead of our launch deadline."
+                </p>
+              </div>
+              <div class="testimonial-client">
+                <div class="client-avatar">DR</div>
+                <div class="client-info">
+                  <strong>Dr. David Ross</strong>
+                  <span>VP of Digital Engineering, CareWave Health</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card-new">
+              <div>
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">
+                  "Their 24/7 web handling team is phenomenal. Our infrastructure is continuously optimized, DDoS attacks are mitigated automatically, and our Core Web Vitals are all in the 95th percentile."
+                </p>
+              </div>
+              <div class="testimonial-client">
+                <div class="client-avatar">SM</div>
+                <div class="client-info">
+                  <strong>Sarah Miller</strong>
+                  <span>Head of Infrastructure, NexaCloud Systems</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Case Studies -->
+    <!-- SECTION 7: Our Technology Partners & Ecosystem (.our-partners) -->
+    <section class="our-partners">
+      <div class="container">
+        <h2>TRUSTED PLATFORMS &amp; TECHNOLOGY ECOSYSTEM</h2>
+        <ul class="partners-logo-sec">
+          <li class="partner-logo-item">
+            <span>☁️ AWS Partner Network</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>🌐 Google Cloud Platform</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>🛡️ Cloudflare Enterprise</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>🐳 Docker &amp; Kubernetes</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>⚡ Next.js &amp; React</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>🐘 PostgreSQL &amp; Redis</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>📱 Flutter &amp; React Native</span>
+          </li>
+          <li class="partner-logo-item">
+            <span>🐧 Enterprise Linux</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION 8: Featured Projects / Case Studies (#case-studies) -->
     <section id="case-studies" class="section-spacing">
       <div class="container">
-        <div class="section-header">
-          <div class="badge badge-emerald">Proven Track Record</div>
-          <h2 class="section-title">Engineered For Impact: <span class="gradient-text">Featured Builds</span></h2>
-          <p>Real-world architectures delivered on time, within budget, and built to withstand massive consumer and enterprise traffic.</p>
+        <div class="section-head" style="text-align: center; margin-bottom: 50px;">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">PROVEN IMPACT</span>
+          <h2 style="font-size: 2.3rem;">Featured Case Studies</h2>
+          <div class="dot-dash"></div>
+          <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto;">Real-world implementations demonstrating high availability, hardened security, and multi-tenant scaling.</p>
         </div>
 
         <div class="case-studies-grid">
           <div class="case-card">
             <div class="case-card-img">
-              <div style="text-align: center;">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
-                <div class="case-card-label">FINTECH MOBILE APP</div>
-              </div>
+              <svg class="case-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                <line x1="2" y1="10" x2="22" y2="10"></line>
+              </svg>
+              <div class="case-card-label" style="position: absolute; bottom: 14px;">FINTECH PAYMENT GATEWAY</div>
             </div>
             <div class="case-card-body">
-              <span class="case-tag">App Development (iOS & Android)</span>
-              <h3 style="margin-bottom: 10px;">NexPay Global Banking App</h3>
-              <p style="font-size: 0.92rem; margin-bottom: 18px;">Built with React Native and Rust microservices. Features zero-lag international transfers, biometric 2FA, and instant push statements.</p>
-              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-dark); border-top: 1px solid var(--border-subtle); padding-top: 14px;">
-                <span>Users: <strong>250,000+</strong></span>
-                <span>Rating: <strong class="emerald-text">4.9 / 5.0</strong></span>
+              <span class="case-tag">Fintech Architecture</span>
+              <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--text-main);">High-Frequency Payment Routing Engine</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+                Engineered a distributed microservices gateway processing 45,000 req/s with PCI-DSS Level 1 compliance and 99.999% SLA uptime.
+              </p>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge" style="font-size: 0.75rem;">Node.js</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">Kubernetes</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">Redis</span>
               </div>
             </div>
           </div>
 
           <div class="case-card">
             <div class="case-card-img">
-              <div style="text-align: center;">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                <div class="case-card-label">ENTERPRISE E-COMMERCE</div>
-              </div>
+              <svg class="case-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+              <div class="case-card-label" style="position: absolute; bottom: 14px;">HEALTHTECH TELEMEDICINE</div>
             </div>
             <div class="case-card-body">
-              <span class="case-tag">Web Development (WordPress + Next.js)</span>
-              <h3 style="margin-bottom: 10px;">HyperCommerce Multi-Store</h3>
-              <p style="font-size: 0.92rem; margin-bottom: 18px;">Headless enterprise WordPress backend with high-speed Next.js frontend. Achieved 0.65s PageSpeed index and 42% lift in conversion rates.</p>
-              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-dark); border-top: 1px solid var(--border-subtle); padding-top: 14px;">
-                <span>Annual Volume: <strong>14M+ Orders</strong></span>
-                <span>LCP Speed: <strong class="emerald-text">650ms</strong></span>
+              <span class="case-tag">Healthcare &amp; HIPAA</span>
+              <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--text-main);">HIPAA-Compliant Patient Telehealth Cloud</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+                Constructed end-to-end encrypted video streaming and medical records synchronization serving over 2.5 million verified patients.
+              </p>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge" style="font-size: 0.75rem;">React Native</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">WebRTC</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">AWS KMS</span>
               </div>
             </div>
           </div>
 
           <div class="case-card">
             <div class="case-card-img">
-              <div style="text-align: center;">
-                <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" fill-opacity="0.16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="case-card-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
-                <div class="case-card-label">MISSION-CRITICAL INFRA</div>
-              </div>
+              <svg class="case-card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+              </svg>
+              <div class="case-card-label" style="position: absolute; bottom: 14px;">E-COMMERCE INFRASTRUCTURE</div>
             </div>
             <div class="case-card-body">
-              <span class="case-tag">Web Handling & Cloud DevOps</span>
-              <h3 style="margin-bottom: 10px;">CloudShield SaaS Fortress</h3>
-              <p style="font-size: 0.92rem; margin-bottom: 18px;">24/7 web handling, automated multi-region backup pipelines, and proactive Cloudflare WAF. Successfully repelled 4.8M attack requests during Black Friday.</p>
-              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-dark); border-top: 1px solid var(--border-subtle); padding-top: 14px;">
-                <span>Uptime Record: <strong class="emerald-text">100.0%</strong></span>
-                <span>Attack Mitigated: <strong>100%</strong></span>
+              <span class="case-tag">Global Scale</span>
+              <h3 style="font-size: 1.2rem; margin-bottom: 10px; color: var(--text-main);">Global Multi-Region Headless Storefront</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px;">
+                Migrated monolithic storefront to modern headless edge architecture, reducing average checkout latency by 65% across 40+ countries.
+              </p>
+              <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                <span class="tech-badge" style="font-size: 0.75rem;">Next.js</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">Cloudflare Workers</span>
+                <span class="tech-badge" style="font-size: 0.75rem;">GraphQL</span>
               </div>
             </div>
           </div>
@@ -565,123 +830,131 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section-spacing">
+    <!-- SECTION 9: Aside Quote Strip (.aside-quote) -->
+    <section class="aside-quote">
       <div class="container">
-        <div class="section-header">
-          <div class="badge">Direct Communication</div>
-          <h2 class="section-title">Initiate Your <span class="gradient-text">Engineering Sprint</span></h2>
-          <p>Tell us about your project objectives. Our principal software architects will review your requirements and respond within 12 hours with a comprehensive technical roadmap.</p>
+        <div class="quote-block-new">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; display: block;">READY TO ACCELERATE</span>
+          <h2>Ready to Architect Your Next Big Breakthrough?</h2>
+          <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto 30px; font-size: 1.05rem; line-height: 1.65;">
+            Partner with seasoned senior engineers committed to delivering scalable, secure, and world-class digital solutions. Discuss your roadmap today.
+          </p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="#contact" class="button btn-gold">
+              <span>Schedule Free Technical Consultation</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="button btn-grey" style="background: rgba(37, 211, 102, 0.12); border-color: rgba(37, 211, 102, 0.4); color: #25d366;">
+              <span>Chat on WhatsApp</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.23-4.38c0-4.54 3.7-8.24 8.24-8.24"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: Contact & Consultation Form (#contact) -->
+    <section id="contact" class="section-spacing" style="padding-top: 20px;">
+      <div class="container">
+        <div class="section-head" style="text-align: center; margin-bottom: 50px;">
+          <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">GET IN TOUCH</span>
+          <h2 style="font-size: 2.4rem;">Start Your Engineering Consultation</h2>
+          <div class="dot-dash"></div>
+          <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Connect directly with our engineering team for an architectural review, project estimate, or 24/7 web handling retainer.</p>
         </div>
 
         <div class="contact-grid">
-          <div class="glass-card" style="padding: 36px;">
-            <h3 style="margin-bottom: 16px;">Direct Channels</h3>
-            <p style="font-size: 0.95rem; margin-bottom: 30px;">Prefer to skip the form? Reach out directly via our executive technical advisory desk:</p>
+          <div>
+            <h3 style="font-size: 1.5rem; margin-bottom: 16px; color: var(--text-main);">Direct Engineering Channels</h3>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 30px;">
+              Our senior engineers are available around the clock to discuss technical scope, cloud migrations, mobile roadmaps, and custom SLAs.
+            </p>
 
-            <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 36px;">
-              <a href="mailto:setineltech@gmail.com" class="direct-channel-item" style="display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 12px 14px; border-radius: 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); transition: var(--transition-fast);">
-                <div class="channel-icon-box channel-icon-email">
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+              <!-- Direct Email Item -->
+              <a href="mailto:setineltech@gmail.com" class="direct-channel-item" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); text-decoration: none; transition: var(--transition-fast);">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold-light); display: flex; align-items: center; justify-content: center; color: var(--gold-light); flex-shrink: 0;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
                   </svg>
                 </div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Direct Email</div>
-                  <div class="direct-channel-val">setineltech@gmail.com</div>
+                  <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-dark); font-weight: 600;">Official Email</div>
+                  <strong style="font-size: 1.05rem; color: var(--text-main);">setineltech@gmail.com</strong>
                 </div>
               </a>
 
-              <a href="tel:+923000941144" class="direct-channel-item" style="display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 12px 14px; border-radius: 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); transition: var(--transition-fast);">
-                <div class="channel-icon-box channel-icon-phone">
+              <!-- Direct Phone Item -->
+              <a href="tel:+923000941144" class="direct-channel-item" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); text-decoration: none; transition: var(--transition-fast);">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); border: 1px solid var(--gold-light); display: flex; align-items: center; justify-content: center; color: var(--gold-light); flex-shrink: 0;">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                   </svg>
                 </div>
                 <div>
-                  <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Hotline & SLA Support</div>
-                  <div class="direct-channel-val">+92 300 0941144</div>
+                  <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-dark); font-weight: 600;">Direct Phone &amp; Support</div>
+                  <strong style="font-size: 1.05rem; color: var(--text-main);">+92 300 0941144</strong>
                 </div>
               </a>
 
-              <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="direct-channel-item whatsapp-channel" style="display: flex; align-items: center; gap: 14px; text-decoration: none; padding: 12px 14px; border-radius: 12px; transition: var(--transition-fast);">
-                <div class="channel-icon-box channel-icon-whatsapp">
+              <!-- Direct WhatsApp Item -->
+              <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer" class="direct-channel-item" style="display: flex; align-items: center; gap: 16px; padding: 18px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); text-decoration: none; transition: var(--transition-fast);">
+                <div style="width: 44px; height: 44px; border-radius: 50%; background: rgba(37, 211, 102, 0.15); border: 1px solid #25d366; display: flex; align-items: center; justify-content: center; color: #25d366; flex-shrink: 0;">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.23-4.38c0-4.54 3.7-8.24 8.24-8.24m4.53 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.3"/>
+                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.23-4.38c0-4.54 3.7-8.24 8.24-8.24"/>
                   </svg>
                 </div>
                 <div>
-                  <div style="font-size: 0.75rem; color: #25d366; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">WhatsApp Chat</div>
-                  <div class="direct-channel-val">Direct Lead Engineer &rarr;</div>
+                  <div style="font-size: 0.78rem; text-transform: uppercase; color: var(--text-dark); font-weight: 600;">Fast Response WhatsApp</div>
+                  <strong style="font-size: 1.05rem; color: #25d366;">+92 300 0941144</strong>
                 </div>
               </a>
-
-              <div class="direct-channel-item" style="display: flex; align-items: center; gap: 14px; padding: 12px 14px; border-radius: 12px; background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle);">
-                <div class="channel-icon-box channel-icon-clock">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 6 12 12 16 14"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">Turnaround Commitment</div>
-                  <div class="direct-channel-val">Guaranteed &lt; 12 Hours</div>
-                </div>
-              </div>
-            </div>
-
-            <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 18px;">
-              <div style="font-size: 0.85rem; font-weight: 600; color: var(--emerald-light); margin-bottom: 4px;">NDA Protected</div>
-              <div style="font-size: 0.8rem; color: var(--text-muted);">All discussions and architecture blueprints are protected under strict non-disclosure terms by default.</div>
             </div>
           </div>
 
-          <div class="glass-card" style="padding: 36px;">
-            <form id="preview-contact-form" onsubmit="event.preventDefault(); alert('Inquiry received! A Setinel Tech Lead Architect will contact you shortly.');">
-              <div class="form-row-2">
+          <!-- Contact Form Box -->
+          <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 40px 32px; box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);">
+            <h4 style="font-size: 1.3rem; margin-bottom: 24px; color: var(--text-main);">Request an Architecture Review</h4>
+            <form action="mailto:setineltech@gmail.com" method="post" enctype="text/plain">
+              <div class="form-row" style="margin-bottom: 18px;">
                 <div>
                   <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Your Name *</label>
-                  <input type="text" required placeholder="Alex Turner" style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem;">
+                  <input type="text" name="name" required placeholder="e.g. muhammad ahmad" style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: var(--text-main); font-size: 0.95rem;">
                 </div>
                 <div>
-                  <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Email Address *</label>
-                  <input type="email" required placeholder="alex@company.com" style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem;">
+                  <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Work Email *</label>
+                  <input type="email" name="email" required placeholder="muhammad@company.com" style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: var(--text-main); font-size: 0.95rem;">
                 </div>
               </div>
 
-              <div style="margin-bottom: 18px;">
-                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Primary Service Needed</label>
-                <select style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem;">
-                  <option value="web">Web Development (WordPress, Next.js, Full-Stack)</option>
-                  <option value="app">Mobile App Development (iOS / Android / Flutter)</option>
-                  <option value="handling">Web Handling & Maintenance (24/7 SLA & DevOps)</option>
-                  <option value="bundle">Full Digital Transformation Ecosystem (Web + App + Handling)</option>
-                </select>
-              </div>
-
-              <div style="margin-bottom: 18px;">
-                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Project Scope & Engagement Tier</label>
-                <select id="estimated-cost-input" style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem;">
-                  <option value="Standard MVP / Website Build">Standard MVP / Website Build</option>
-                  <option value="Growth Platform / Mobile App" selected>Growth Platform / Mobile App Engineering</option>
-                  <option value="Enterprise Architecture">Enterprise Systems & Cloud Architecture</option>
-                  <option value="24/7 Web Handling SLA">24/7 Web Handling & DevOps SLA Retainer</option>
-                  <option value="Custom Technical Consultation">Custom Technical Consultation</option>
-                </select>
+              <div class="form-row" style="margin-bottom: 18px;">
+                <div>
+                  <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Phone / WhatsApp</label>
+                  <input type="tel" name="phone" placeholder="+1 (555) 000-0000" style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: var(--text-main); font-size: 0.95rem;">
+                </div>
+                <div>
+                  <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Primary Service of Interest</label>
+                  <select name="service" style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: var(--text-main); font-size: 0.95rem;">
+                    <option value="Enterprise Web Development">Enterprise Web Development</option>
+                    <option value="Mobile App Engineering">Mobile App Engineering</option>
+                    <option value="24/7 Web Handling &amp; SRE" selected>24/7 Web Handling &amp; SRE</option>
+                    <option value="Cloud DevOps Architecture">Cloud DevOps Architecture</option>
+                    <option value="Cyber Defense &amp; WAF Security">Cyber Defense &amp; WAF Security</option>
+                  </select>
+                </div>
               </div>
 
               <div style="margin-bottom: 24px;">
-                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Project Scope & Objectives *</label>
-                <textarea rows="4" required placeholder="Describe your web app, mobile requirements, or web handling priorities..." style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem; font-family: var(--font-main);"></textarea>
+                <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Project Scope &amp; Objectives *</label>
+                <textarea name="message" rows="4" required placeholder="Describe your web system, mobile requirements, or 24/7 infrastructure priorities..." style="width: 100%; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: var(--text-main); font-size: 0.95rem; font-family: var(--font-main);"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                <span>Submit Project Brief</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="22" y1="2" x2="11" y2="13"></line>
-                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                </svg>
+              <button type="submit" class="button btn-gold" style="width: 100%; border: none; cursor: pointer;">
+                <span>Submit Consultation Request</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               </button>
             </form>
           </div>
@@ -690,91 +963,82 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="cta-banner" style="margin-bottom: 70px;">
-        <div class="badge badge-emerald">Ready To Scale?</div>
-        <h2>Let's Engineer Your Next <span class="gradient-text">Breakthrough Product</span></h2>
-        <p>From modern web applications and native mobile experiences to 24/7 autonomous web handling, Setinel Tech is your technology vanguard.</p>
-        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-          <a href="#contact" class="btn btn-primary">
-            <span>Schedule Free Architecture Review</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-          <a href="#services" class="btn btn-secondary">
-            <span>Explore All Services</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand-logo">
-            <div class="brand-icon">
-          <img src="assets/images/logo-icon.png?v=4" alt="Setinel Tech" width="40" height="40" style="width: 40px; height: 40px; max-width: 40px; max-height: 40px; object-fit: contain; display: block;">
-        </div>
-            <span>SETINEL<span class="emerald-text">TECH</span></span>
+  <!-- Sleek Minimalist 4-Column Footer (Matching Reference Screenshot) -->
+  <footer class="site-footer-clean">
+    <div class="container footer-clean-grid">
+      <!-- Column 1: Brand & Copyright -->
+      <div class="footer-clean-col footer-col-brand">
+        <a href="index.html" class="footer-clean-logo" aria-label="Setinel Tech">
+          <div class="footer-clean-logo-wrap">
+            <img src="assets/images/logo-icon.png?v=5" alt="Setinel Tech" width="36" height="36" class="footer-clean-logo-img">
           </div>
-          <p>Enterprise-grade web engineering, cross-platform mobile apps, and 24/7 managed web handling infrastructure built for hyper-growth companies.</p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Core Services</h4>
-          <ul class="footer-links">
-            <li><a href="web-development.html">Web Development</a></li>
-            <li><a href="app-development.html">Mobile App Engineering</a></li>
-            <li><a href="web-handling.html">24/7 Web Handling</a></li>
-            <li><a href="#handling">Cloud DevOps & WAF</a></li>
-            <li><a href="#contact">Schedule Consultation</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Solutions</h4>
-          <ul class="footer-links">
-            <li><a href="#tech-stack">Full-Stack SaaS</a></li>
-            <li><a href="#tech-stack">Headless WordPress</a></li>
-            <li><a href="#tech-stack">iOS & Android Apps</a></li>
-            <li><a href="#handling">SLA & Disaster Recovery</a></li>
-            <li><a href="#case-studies">Client Case Studies</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contact & Operations</h4>
-          <ul class="footer-links">
-            <li style="color: #cbd5e1;"><strong style="color: #ffffff;">HQ:</strong> <span style="color: #cbd5e1;">Silicon Valley & Distributed Global</span></li>
-            <li style="color: #cbd5e1;"><strong style="color: #ffffff;">Email:</strong> <a href="mailto:setineltech@gmail.com" style="color: #cbd5e1;">setineltech@gmail.com</a></li>
-            <li style="color: #cbd5e1;"><strong style="color: #ffffff;">Phone:</strong> <a href="tel:+923000941144" style="color: #cbd5e1;">+92 300 0941144</a></li>
-            <li style="color: #cbd5e1;"><strong style="color: #ffffff;">Uptime Status:</strong> <span class="emerald-text" style="font-weight: 600;">99.99% Operational</span></li>
-          </ul>
-        </div>
+          <span class="footer-clean-logo-text">SETINEL<span class="text-amber">TECH</span></span>
+        </a>
+        <p class="footer-clean-copy">Copyright 2026 Setinel Tech</p>
       </div>
 
-      <div class="footer-bottom">
-        <div>&copy; 2026 Setinel Tech Inc. All rights reserved. Built for high performance & security.</div>
-        <div style="display: flex; gap: 20px;">
-          <a href="#" style="color: #94a3b8;">Privacy Policy</a>
-          <a href="#" style="color: #94a3b8;">Terms of Service</a>
-          <a href="#" style="color: #94a3b8;">Security Statement</a>
+      <!-- Column 2: Address -->
+      <div class="footer-clean-col footer-col-address">
+        <h4 class="footer-clean-title">Address</h4>
+        <p class="footer-clean-text">main multan road  Lahore, Punjab</p>
+      </div>
+
+      <!-- Column 3: Contact Us -->
+      <div class="footer-clean-col footer-col-contact">
+        <h4 class="footer-clean-title">Contact Us</h4>
+        <p class="footer-clean-text">
+          <a href="mailto:connect@setineltech.com" class="footer-clean-email">connect@setineltech.com</a>
+        </p>
+        <p class="footer-clean-text footer-clean-phone">(+92) 300 0941144</p>
+      </div>
+
+      <!-- Column 4: Follow Us -->
+      <div class="footer-clean-col footer-col-follow">
+        <h4 class="footer-clean-title">Follow Us</h4>
+        <div class="footer-clean-socials">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn fb" aria-label="Facebook">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn in" aria-label="LinkedIn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn yt" aria-label="YouTube">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn tt" aria-label="TikTok">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#ffffff"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .57.04.84.11V9.32a6.34 6.34 0 0 0-.84-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.58a8.28 8.28 0 0 0 4.83 1.56V6.69z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn ig" aria-label="Instagram">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+        <div>
+          <a href="#privacy" class="footer-clean-privacy">Privacy Policy</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Action Button -->
-  <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with Setinel Tech on WhatsApp">
-    <div class="whatsapp-pulse"></div>
-    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.82 2.42c-1.48 0-2.93-.39-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.23-4.38c0-4.54 3.7-8.24 8.24-8.24m4.53 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.5-1.4-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.38-.44.13-.14.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.54.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.3"/>
+  <!-- Floating Back-to-Top Button (TowerTech Component) -->
+  <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
-    <span class="whatsapp-tooltip">Chat with us on WhatsApp</span>
   </a>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <!-- Floating Live Chat Widget (Matching TowerTech Reference Screenshot) -->
+  <div class="floating-chat-container">
+    <div class="floating-chat-tooltip">
+      <span>👋 Hi! We are here, let's chat about your project.</span>
+    </div>
+    <a href="https://wa.me/923000941144?text=Hello%20Setinel%20Tech%2C%20I%20would%20like%20to%20discuss%20a%20project." 
+       target="_blank" rel="noopener noreferrer" class="floating-chat-btn" aria-label="Chat with Setinel Tech">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.34 5L2 22l5.16-1.31C8.61 21.49 10.26 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.57 0-3.04-.44-4.3-1.21l-.31-.19-3.2.81.85-3.08-.2-.33A7.95 7.95 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm-3.5-9c.83 0 1.5-.67 1.5-1.5S9.33 8 8.5 8 7 8.67 7 9.5 7.67 11 8.5 11zm7 0c.83 0 1.5-.67 1.5-1.5S16.33 8 15.5 8 14 8.67 14 9.5s.67 1.5 1.5 1.5zm-7.05 3.5c.67 1.48 2.14 2.5 4.05 2.5s3.38-1.02 4.05-2.5a.75.75 0 1 0-1.37-.62c-.44.97-1.46 1.62-2.68 1.62s-2.24-.65-2.68-1.62a.75.75 0 0 0-1.37.62z"/>
+      </svg>
+    </a>
+  </div>
+
+  <script src="assets/js/main.js?v=15"></script>
 </body>
 </html>

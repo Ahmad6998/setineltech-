@@ -7,10 +7,11 @@
 ?>
 <section id="case-studies" class="section-spacing">
     <div class="container">
-        <div class="section-header">
-            <div class="badge badge-emerald">Proven Track Record</div>
-            <h2 class="section-title">Engineered For Impact: <span class="gradient-text">Featured Builds</span></h2>
-            <p>Real-world architectures delivered on time, within budget, and built to withstand massive consumer and enterprise traffic.</p>
+        <div class="section-head" style="text-align: center; margin-bottom: 50px;">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">PROVEN IMPACT</span>
+            <h2 style="font-size: 2.3rem;">Featured Case Studies</h2>
+            <div class="dot-dash"></div>
+            <p style="color: var(--text-muted); max-width: 650px; margin: 0 auto;">Real-world implementations demonstrating high availability, hardened security, and multi-tenant scaling.</p>
         </div>
 
         <div class="case-studies-grid">

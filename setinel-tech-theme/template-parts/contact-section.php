@@ -9,10 +9,11 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
 ?>
 <section id="contact" class="section-spacing">
     <div class="container">
-        <div class="section-header">
-            <div class="badge">Direct Communication</div>
-            <h2 class="section-title">Initiate Your <span class="gradient-text">Engineering Sprint</span></h2>
-            <p>Tell us about your project objectives. Our principal software architects will review your requirements and respond within 12 hours with a comprehensive technical roadmap.</p>
+        <div class="section-head" style="text-align: center; margin-bottom: 50px;">
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;">GET IN TOUCH</span>
+            <h2 style="font-size: 2.4rem;">Start Your Engineering Consultation</h2>
+            <div class="dot-dash"></div>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">Connect directly with our engineering team for an architectural review, project estimate, or 24/7 web handling retainer.</p>
         </div>
 
         <div class="contact-grid">
