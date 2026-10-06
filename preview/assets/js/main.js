@@ -44,6 +44,73 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Dynamic Active Navigation & ScrollSpy
+  const navLinks = document.querySelectorAll('.nav-menu .nav-link');
+  const sections = document.querySelectorAll('section[id]');
+
+  function updateActiveNavLink() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    const headerHeight = (siteHeader ? siteHeader.offsetHeight : 100) + 40;
+
+    // Detect current page
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
+
+    if (currentPage !== 'index.html' && currentPage !== '' && currentPage !== '/') {
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href') || '';
+        if (href.includes(currentPage)) {
+          link.classList.add('active');
+        } else if (
+          (currentPage.includes('web-') || currentPage.includes('app-')) &&
+          link.classList.contains('nav-link-dropdown')
+        ) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+      return;
+    }
+
+    // On home page: find current section based on scroll position
+    let currentSectionId = 'home';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - headerHeight;
+      const sectionHeight = section.offsetHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href') || '';
+      const linkHash = href.includes('#') ? href.split('#')[1] : '';
+
+      if (
+        (currentSectionId === 'home' && (href === 'index.html' || href === '#' || href === '' || href.endsWith('/'))) ||
+        (linkHash && linkHash === currentSectionId)
+      ) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
+  updateActiveNavLink();
+
+  // Instant Active update on click for all navigation links
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      if (!this.classList.contains('nav-link-dropdown')) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        this.classList.add('active');
+      }
+    });
+  });
+
   // Header Scroll Effect
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
