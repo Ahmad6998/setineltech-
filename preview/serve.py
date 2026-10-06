@@ -7,7 +7,8 @@ import threading
 import time
 
 PORTS = [8080, 8000, 3000, 8081]
-DIRECTORY = os.path.dirname(os.path.abspath(__file__))
+PARENT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DIRECTORY = PARENT_DIR if os.path.exists(os.path.join(PARENT_DIR, 'index.html')) else os.path.dirname(os.path.abspath(__file__))
 
 class CustomHandler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):

@@ -15,7 +15,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
             <p>Tell us about your project objectives. Our principal software architects will review your requirements and respond within 12 hours with a comprehensive technical roadmap.</p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; align-items: start;">
+        <div class="contact-grid">
             <!-- Left Info Panel -->
             <div class="glass-card" style="padding: 36px;">
                 <h3 style="margin-bottom: 16px;">Direct Channels</h3>
@@ -87,7 +87,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
             <!-- Right Contact Form -->
             <div class="glass-card" style="padding: 36px;">
                 <form id="setinel-inquiry-form" onsubmit="event.preventDefault(); alert('Inquiry received! A Setinel Tech Lead Architect will contact you shortly.');">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 18px;">
+                    <div class="form-row-2">
                         <div>
                             <label style="display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; color: var(--text-muted);">Your Name *</label>
                             <input type="text" required placeholder="Alex Turner" style="width: 100%; background: #0c0e15; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 12px 14px; color: #fff; font-size: 0.95rem;">
