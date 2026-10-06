@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SETINEL_TECH_VERSION', '1.0.0');
+define('SETINEL_TECH_VERSION', '1.1.0');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -126,7 +126,7 @@ function setinel_tech_customize_register($wp_customize) {
 
     // Contact Email
     $wp_customize->add_setting('setinel_contact_email', array(
-        'default'           => 'contact@setineltech.io',
+        'default'           => 'setineltech@gmail.com',
         'sanitize_callback' => 'sanitize_email',
     ));
     $wp_customize->add_control('setinel_contact_email', array(

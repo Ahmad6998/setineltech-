@@ -56,6 +56,16 @@
 
         <div class="nav-actions">
             <?php
+            $hdr_email = get_theme_mod('setinel_contact_email', 'setineltech@gmail.com');
+            ?>
+            <a href="mailto:<?php echo esc_attr($hdr_email); ?>" class="header-email-btn" title="<?php echo esc_attr($hdr_email); ?>" aria-label="<?php esc_attr_e('Email Setinel Tech', 'setinel-tech'); ?>">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <span class="header-email-text"><?php echo esc_html($hdr_email); ?></span>
+            </a>
+            <?php
             $wa_number_hdr = get_theme_mod('setinel_whatsapp_number', '923000941144');
             $clean_wa_hdr = preg_replace('/[^0-9]/', '', $wa_number_hdr);
             $wa_url_hdr = 'https://wa.me/' . $clean_wa_hdr . '?text=' . rawurlencode('Hello Setinel Tech, I would like to discuss a project.');

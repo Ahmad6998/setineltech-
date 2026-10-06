@@ -34,7 +34,7 @@
 ## ⚙️ Theme Configuration & Customizer
 
 Go to **Appearance → Customize → Setinel Tech Settings** to configure:
-- **Agency Contact Email:** (Defaults to `contact@setineltech.io`)
+- **Agency Contact Email:** (Defaults to `setineltech@gmail.com`)
 - **Agency Hotline / SLA Support Phone:** (Defaults to `+92 300 0941144`)
 - **Hero Main Headline:** (Customizable value proposition)
 

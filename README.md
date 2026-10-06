@@ -52,7 +52,7 @@ in any web browser (Chrome, Firefox, Safari, Edge).
 ### Step 2: Configure Theme Settings
 1. Go to **Appearance → Customize → Setinel Tech Settings**.
 2. Configure your agency contact details:
-   - **Agency Contact Email:** (e.g. `contact@setineltech.io`)
+   - **Agency Contact Email:** (e.g. `setineltech@gmail.com`)
    - **Agency Phone:** (e.g. `+92 300 0941144`)
    - **Hero Main Headline:** (Customizable value proposition)
 3. Click **Publish**.

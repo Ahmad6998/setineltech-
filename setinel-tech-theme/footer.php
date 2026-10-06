@@ -4,7 +4,7 @@
  *
  * @package Setinel_Tech
  */
-$contact_email = get_theme_mod('setinel_contact_email', 'contact@setineltech.io');
+$contact_email = get_theme_mod('setinel_contact_email', 'setineltech@gmail.com');
 $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
 ?>
 </main><!-- #main-content -->

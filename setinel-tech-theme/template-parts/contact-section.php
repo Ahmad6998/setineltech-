@@ -4,7 +4,7 @@
  *
  * @package Setinel_Tech
  */
-$contact_email = get_theme_mod('setinel_contact_email', 'contact@setineltech.io');
+$contact_email = get_theme_mod('setinel_contact_email', 'setineltech@gmail.com');
 $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
 ?>
 <section id="contact" class="section-spacing">
@@ -31,7 +31,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
                         </div>
                         <div>
                             <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;"><?php esc_html_e('Direct Email', 'setinel-tech'); ?></div>
-                            <div style="font-weight: 600; color: #fff; font-size: 0.95rem;"><?php echo esc_html($contact_email); ?></div>
+                            <div class="direct-channel-val"><?php echo esc_html($contact_email); ?></div>
                         </div>
                     </a>
 
@@ -43,7 +43,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
                         </div>
                         <div>
                             <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;"><?php esc_html_e('Hotline & SLA Support', 'setinel-tech'); ?></div>
-                            <div style="font-weight: 600; color: #fff; font-size: 0.95rem;"><?php echo esc_html($contact_phone); ?></div>
+                            <div class="direct-channel-val"><?php echo esc_html($contact_phone); ?></div>
                         </div>
                     </a>
 
@@ -60,7 +60,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
                         </div>
                         <div>
                             <div style="font-size: 0.75rem; color: #25d366; text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;"><?php esc_html_e('WhatsApp Chat', 'setinel-tech'); ?></div>
-                            <div style="font-weight: 600; color: #fff; font-size: 0.95rem;"><?php esc_html_e('Direct Lead Engineer →', 'setinel-tech'); ?></div>
+                            <div class="direct-channel-val"><?php esc_html_e('Direct Lead Engineer →', 'setinel-tech'); ?></div>
                         </div>
                     </a>
 
@@ -73,7 +73,7 @@ $contact_phone = get_theme_mod('setinel_contact_phone', '+92 300 0941144');
                         </div>
                         <div>
                             <div style="font-size: 0.75rem; color: var(--gold-light); text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;"><?php esc_html_e('Turnaround Commitment', 'setinel-tech'); ?></div>
-                            <div style="font-weight: 600; color: #fff; font-size: 0.95rem;"><?php esc_html_e('Guaranteed < 12 Hours', 'setinel-tech'); ?></div>
+                            <div class="direct-channel-val"><?php esc_html_e('Guaranteed < 12 Hours', 'setinel-tech'); ?></div>
                         </div>
                     </div>
                 </div>
