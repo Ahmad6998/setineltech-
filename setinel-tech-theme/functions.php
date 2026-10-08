@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SETINEL_TECH_VERSION', '1.7.6');
+define('SETINEL_TECH_VERSION', '1.7.9');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -188,6 +188,39 @@ function setinel_tech_customize_register($wp_customize) {
         'label'    => __('Instagram URL', 'setinel-tech'),
         'section'  => 'setinel_agency_options',
         'type'     => 'url',
+    ));
+
+    // YouTube URL
+    $wp_customize->add_setting('setinel_youtube_url', array(
+        'default'           => 'https://youtube.com',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('setinel_youtube_url', array(
+        'label'    => __('YouTube URL', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'url',
+    ));
+
+    // TikTok URL
+    $wp_customize->add_setting('setinel_tiktok_url', array(
+        'default'           => 'https://tiktok.com',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    $wp_customize->add_control('setinel_tiktok_url', array(
+        'label'    => __('TikTok URL', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'url',
+    ));
+
+    // Agency Address
+    $wp_customize->add_setting('setinel_address', array(
+        'default'           => 'Main Multan Road, Lahore, Punjab',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    $wp_customize->add_control('setinel_address', array(
+        'label'    => __('Agency Address', 'setinel-tech'),
+        'section'  => 'setinel_agency_options',
+        'type'     => 'text',
     ));
 
     // Hero Tagline

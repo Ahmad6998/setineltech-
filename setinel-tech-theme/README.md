@@ -1,6 +1,6 @@
 # 🛡️ Setinel Tech - Custom WordPress Theme
 
-> **Official Enterprise WordPress Theme for Setinel Tech**  
+> **Official Enterprise WordPress Theme for Setinel Tech**
 > Tailored for high-growth digital agencies specializing in **Web Development**, **Mobile App Development**, and **24/7 Web Handling & Cloud DevOps**.
 
 ---

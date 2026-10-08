@@ -29,7 +29,7 @@ $wa_url = 'https://wa.me/' . $clean_wa . '?text=' . rawurlencode('Hello Setinel 
         <!-- Column 2: Address -->
         <div class="footer-clean-col footer-col-address">
             <h4 class="footer-clean-title"><?php esc_html_e('Address', 'setinel-tech'); ?></h4>
-            <p class="footer-clean-text"><?php echo esc_html(get_theme_mod('setinel_address', 'main multan road  Lahore, Punjab')); ?></p>
+            <p class="footer-clean-text"><?php echo esc_html(get_theme_mod('setinel_address', 'Main Multan Road, Lahore, Punjab')); ?></p>
         </div>
 
         <!-- Column 3: Contact Us -->
