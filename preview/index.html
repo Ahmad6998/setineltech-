@@ -17,7 +17,7 @@
   <meta name="theme-color" content="#d97706">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="stylesheet" href="assets/css/style.css?v=34">
+  <link rel="stylesheet" href="assets/css/style.css?v=36">
 </head>
 <body>
   <div class="cyber-bg-glow"></div>
@@ -101,7 +101,7 @@
     <!-- Visual Section (Tower Tech Hero with Gold 3D Tower & Animated Canvas) -->
     <section id="home" class="visual-section">
       <div class="bg-image">
-        <img src="assets/images/bg-visual-theme.webp" alt="Setinel Tech Intelligent Solutions" width="1920" height="1080">
+        <img src="assets/images/bg-visual-theme.webp" alt="Setinel Tech Intelligent Solutions" width="1920" height="1080" fetchpriority="high" decoding="async">
       </div>
       <canvas id="hero-banner-canvas"></canvas>
       <div class="container visual-container">
@@ -140,7 +140,7 @@
     <!-- SECTION 1: Creating Value & Ensuring Customer Success (.section-frame with TowerTech Layout) -->
     <section id="about-value" class="section-frame">
       <div class="pattern-bg">
-        <img src="assets/images/pattern.webp" alt="Background pattern" width="1920" height="1030">
+        <img src="assets/images/pattern.webp" alt="Background pattern" width="1920" height="1030" loading="lazy" decoding="async">
       </div>
       <div class="container">
         <div class="section-image-head">
@@ -160,14 +160,17 @@
           <div class="visual-illustration-holder">
             <div class="image-globes">
               <div class="globe-box">
-                <img src="assets/images/globe-1.webp" alt="Pendant lamp decorative light" width="65" height="352">
+                <img src="assets/images/globe-1.webp" alt="Pendant lamp decorative light" width="65" height="352" loading="lazy" decoding="async">
               </div>
               <div class="globe-box">
-                <img src="assets/images/globe-2.webp" alt="Pendant lamp decorative light" width="65" height="352">
+                <img src="assets/images/globe-2.webp" alt="Pendant lamp decorative light" width="65" height="352" loading="lazy" decoding="async">
               </div>
             </div>
             <div class="header-image">
-              <img src="assets/images/ttl-home-section.gif" alt="Setinel Tech Transformation Platform" width="1040" height="734">
+              <picture>
+                <source srcset="assets/images/ttl-home-section.webp" type="image/webp">
+                <img src="assets/images/ttl-home-section.gif" alt="Setinel Tech Transformation Platform" width="1040" height="734" loading="lazy" decoding="async">
+              </picture>
             </div>
           </div>
         </div>
@@ -555,7 +558,7 @@
             </div>
             <h4 id="process-preview-title">Discovery &amp; Technical Requirements</h4>
             <p id="process-preview-desc">In-depth consultation, system architecture audit, threat vector analysis, and precise technical specification.</p>
-            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-around; text-align: left;">
+            <div class="process-visual-meta" style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-around; text-align: left;">
               <div>
                 <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Deliverable</span>
                 <strong style="font-size: 0.88rem; color: var(--text-main);">Technical Blueprint</strong>
@@ -1039,6 +1042,6 @@
     </a>
   </div>
 
-  <script src="assets/js/main.js?v=18"></script>
+  <script src="assets/js/main.js?v=19" defer></script>
 </body>
 </html>

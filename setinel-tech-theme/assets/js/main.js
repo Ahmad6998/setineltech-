@@ -124,8 +124,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  window.addEventListener('scroll', updateActiveNavLink, { passive: true });
-  updateActiveNavLink();
+  // Back To Top Button
+  const backToTopBtn = document.getElementById('back-to-top') || document.querySelector('.back-to-top');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
+
+  // Unified 60fps-throttled scroll handler for all scroll-driven UI (Smooth on Mobile)
+  const header = document.querySelector('.site-header');
+  let scrollTicking = false;
+
+  function onScroll() {
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+    updateActiveNavLink();
+    if (scrollY > 40) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+    if (backToTopBtn) {
+      if (scrollY > 350) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!scrollTicking) {
+      window.requestAnimationFrame(() => {
+        onScroll();
+        scrollTicking = false;
+      });
+      scrollTicking = true;
+    }
+  }, { passive: true });
+  onScroll();
 
   // Instant Active update on click for all navigation links
   navLinks.forEach(link => {
@@ -135,16 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
         this.classList.add('active');
       }
     });
-  });
-
-  // Header Scroll Effect
-  const header = document.querySelector('.site-header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 40) {
-      header?.classList.add('scrolled');
-    } else {
-      header?.classList.remove('scrolled');
-    }
   });
 
   // Terminal Real-Time Status Simulation
@@ -180,23 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const lat = (14 + Math.random() * 8).toFixed(1);
       termLatency.textContent = lat + 'ms';
     }, 3000);
-  }
-
-  // Back To Top Button
-  const backToTopBtn = document.getElementById('back-to-top') || document.querySelector('.back-to-top');
-  if (backToTopBtn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 350) {
-        backToTopBtn.classList.add('visible');
-      } else {
-        backToTopBtn.classList.remove('visible');
-      }
-    });
-
-    backToTopBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
   }
 
   // Mouse Scroll Indicator (.btn-explore)
@@ -316,9 +327,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const ctx = heroCanvas.getContext('2d');
     let width, height;
     let particles = [];
-    const particleCount = window.innerWidth < 768 ? 55 : 110;
-    const maxDistance = 110;
+    const particleCount = window.innerWidth < 768 ? 24 : 85;
+    const maxDistance = window.innerWidth < 768 ? 85 : 110;
     const mouse = { x: -1000, y: -1000 };
+    let isCanvasVisible = true;
+    let animId = null;
 
     const resize = () => {
       width = heroCanvas.width = heroCanvas.offsetWidth || window.innerWidth;
@@ -383,6 +396,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const animate = () => {
+      if (!isCanvasVisible || document.hidden) {
+        animId = null;
+        return;
+      }
+
       ctx.clearRect(0, 0, width, height);
 
       // Draw connection lines between nearby particles
@@ -394,7 +412,6 @@ document.addEventListener('DOMContentLoaded', () => {
           if (dist < maxDistance) {
             const alpha = (1 - dist / maxDistance) * 0.22;
             ctx.beginPath();
-            // Alternate line colors between Light Blue and Amber #f59e0b
             ctx.strokeStyle = i % 2 === 0 ? `rgba(2, 132, 199, ${alpha})` : `rgba(245, 158, 11, ${alpha})`;
             ctx.lineWidth = 0.6;
             ctx.moveTo(particles[i].x, particles[i].y);
@@ -423,10 +440,36 @@ document.addEventListener('DOMContentLoaded', () => {
         p.draw();
       });
 
-      requestAnimationFrame(animate);
+      animId = requestAnimationFrame(animate);
     };
 
-    animate();
+    function startAnimation() {
+      if (!animId && isCanvasVisible && !document.hidden) {
+        animId = requestAnimationFrame(animate);
+      }
+    }
+
+    // Pause canvas calculations when hero banner is not on screen (huge mobile performance boost)
+    if ('IntersectionObserver' in window) {
+      const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          isCanvasVisible = entry.isIntersecting;
+          if (isCanvasVisible) {
+            startAnimation();
+          }
+        });
+      }, { threshold: 0.05 });
+      const heroSection = document.getElementById('home') || heroCanvas.parentElement;
+      if (heroSection) heroObserver.observe(heroSection);
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden && isCanvasVisible) {
+        startAnimation();
+      }
+    });
+
+    startAnimation();
   }
 
   // Industries Interactive Animated Slider
@@ -620,6 +663,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
       updateDots();
       goToSlide(0);
+
+      // Pause slider autoplay when scrolled offscreen
+      if ('IntersectionObserver' in window && sliderContainer) {
+        const sliderObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            isPaused = !entry.isIntersecting;
+          });
+        }, { threshold: 0.1 });
+        sliderObserver.observe(sliderContainer);
+      }
+
       startAutoPlay();
     }
   }

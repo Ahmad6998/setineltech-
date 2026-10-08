@@ -45,7 +45,10 @@ get_header();
                         </div>
                     </div>
                     <div class="header-image">
-                        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ttl-home-section.gif'); ?>" alt="<?php esc_attr_e('Setinel Tech Transformation Platform', 'setinel-tech'); ?>" width="1040" height="734">
+                        <picture>
+                            <source srcset="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ttl-home-section.webp'); ?>" type="image/webp">
+                            <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/ttl-home-section.gif'); ?>" alt="<?php esc_attr_e('Setinel Tech Transformation Platform', 'setinel-tech'); ?>" width="1040" height="734" loading="lazy" decoding="async">
+                        </picture>
                     </div>
                 </div>
             </div>

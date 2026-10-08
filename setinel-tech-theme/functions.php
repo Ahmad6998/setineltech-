@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SETINEL_TECH_VERSION', '1.7.9');
+define('SETINEL_TECH_VERSION', '1.8.2');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -69,15 +69,15 @@ function setinel_tech_scripts() {
         null
     );
 
-    // Main Stylesheet
+    // Main Stylesheet (Directly enqueued to avoid CSS @import network overhead)
     wp_enqueue_style(
         'setinel-tech-theme-style',
-        get_stylesheet_uri(),
+        get_template_directory_uri() . '/assets/css/style.css',
         array('setinel-tech-fonts'),
         SETINEL_TECH_VERSION
     );
 
-    // Main Interactive JS
+    // Main Interactive JS (Loaded at footer, deferred for performance)
     wp_enqueue_script(
         'setinel-tech-main-js',
         get_template_directory_uri() . '/assets/js/main.js',
@@ -87,6 +87,19 @@ function setinel_tech_scripts() {
     );
 }
 add_action('wp_enqueue_scripts', 'setinel_tech_scripts');
+
+/**
+ * Add defer attribute to main JS script in WordPress.
+ */
+function setinel_tech_defer_scripts($tag, $handle, $src) {
+    if ('setinel-tech-main-js' === $handle) {
+        if (false === strpos($tag, 'defer')) {
+            return str_replace(' src', ' defer src', $tag);
+        }
+    }
+    return $tag;
+}
+add_filter('script_loader_tag', 'setinel_tech_defer_scripts', 10, 3);
 
 /**
  * Register widget area.

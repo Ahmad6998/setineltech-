@@ -23,6 +23,8 @@ $wa_url_hdr = 'https://wa.me/' . $clean_wa_hdr . '?text=' . rawurlencode('Hello 
     <meta name="theme-color" content="#d97706">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

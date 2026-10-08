@@ -110,7 +110,7 @@
                 </div>
                 <h4 id="process-preview-title">Discovery &amp; Technical Requirements</h4>
                 <p id="process-preview-desc">In-depth consultation, system architecture audit, threat vector analysis, and precise technical specification.</p>
-                <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-around; text-align: left;">
+                <div class="process-visual-meta" style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-around; text-align: left;">
                     <div>
                         <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Deliverable</span>
                         <strong style="font-size: 0.88rem; color: var(--text-main);">Technical Blueprint</strong>

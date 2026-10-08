@@ -19,7 +19,7 @@ $wa_url = 'https://wa.me/' . $clean_wa . '?text=' . rawurlencode('Hello Setinel 
         <div class="footer-clean-col footer-col-brand">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="footer-clean-logo" aria-label="<?php bloginfo('name'); ?>">
                 <div class="footer-clean-logo-wrap">
-                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=5'); ?>" alt="<?php bloginfo('name'); ?>" width="36" height="36" class="footer-clean-logo-img">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/logo-icon.png?v=5'); ?>" alt="<?php bloginfo('name'); ?>" width="36" height="36" class="footer-clean-logo-img" loading="lazy" decoding="async">
                 </div>
                 <span class="footer-clean-logo-text">SETINEL<span class="text-amber">TECH</span></span>
             </a>

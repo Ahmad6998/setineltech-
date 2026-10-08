@@ -7,7 +7,7 @@
 ?>
 <section id="home" class="visual-section">
     <div class="bg-image">
-        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/bg-visual-theme.webp'); ?>" alt="<?php bloginfo('name'); ?> Intelligent Solutions" width="1920" height="1080">
+        <img src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/bg-visual-theme.webp'); ?>" alt="<?php bloginfo('name'); ?> Intelligent Solutions" width="1920" height="1080" fetchpriority="high" decoding="async">
     </div>
     <canvas id="hero-banner-canvas"></canvas>
     <div class="container visual-container">

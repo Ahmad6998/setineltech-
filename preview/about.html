@@ -13,7 +13,7 @@
   <link rel="manifest" href="site.webmanifest?v=20261006c">
   <meta name="theme-color" content="#0c1464">
 
-  <link rel="stylesheet" href="assets/css/style.css?v=34">
+  <link rel="stylesheet" href="assets/css/style.css?v=36">
 </head>
 <body>
   <div class="cyber-bg-glow"></div>
@@ -129,7 +129,10 @@
               </div>
             </div>
             <div class="header-image">
-              <img src="assets/images/ttl-home-section.gif" alt="Setinel Tech Transformation Platform" width="1040" height="734">
+              <picture>
+                <source srcset="assets/images/ttl-home-section.webp" type="image/webp">
+                <img src="assets/images/ttl-home-section.gif" alt="Setinel Tech Transformation Platform" width="1040" height="734" loading="lazy" decoding="async">
+              </picture>
             </div>
           </div>
         </div>
@@ -311,6 +314,6 @@
     </a>
   </div>
 
-  <script src="assets/js/main.js?v=18"></script>
+  <script src="assets/js/main.js?v=19" defer></script>
 </body>
 </html>
