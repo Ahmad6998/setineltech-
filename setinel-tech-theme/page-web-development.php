@@ -43,18 +43,18 @@ get_header();
             </ul>
         </div>
         <div class="deep-dive-visual">
-            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--emerald-light); margin-bottom: 10px;">// web-performance-audit.json</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6;">
-                "scores": {<br>
-                &nbsp;&nbsp;"performance": <span style="color: #34d399;">100</span>,<br>
-                &nbsp;&nbsp;"accessibility": <span style="color: #34d399;">98</span>,<br>
-                &nbsp;&nbsp;"best_practices": <span style="color: #34d399;">100</span>,<br>
-                &nbsp;&nbsp;"seo": <span style="color: #34d399;">100</span><br>
+            <div class="terminal-title">// web-performance-audit.json</div>
+            <div class="terminal-body">
+                <span class="json-key">"scores"</span>: {<br>
+                &nbsp;&nbsp;<span class="json-prop">"performance"</span>: <span class="json-val-num">100</span>,<br>
+                &nbsp;&nbsp;<span class="json-prop">"accessibility"</span>: <span class="json-val-num">98</span>,<br>
+                &nbsp;&nbsp;<span class="json-prop">"best_practices"</span>: <span class="json-val-num">100</span>,<br>
+                &nbsp;&nbsp;<span class="json-prop">"seo"</span>: <span class="json-val-num">100</span><br>
                 },<br>
-                "metrics": {<br>
-                &nbsp;&nbsp;"first_contentful_paint": "<span style="color: #a78bfa;">0.38s</span>",<br>
-                &nbsp;&nbsp;"largest_contentful_paint": "<span style="color: #a78bfa;">0.62s</span>",<br>
-                &nbsp;&nbsp;"cumulative_layout_shift": "<span style="color: #a78bfa;">0.000</span>"<br>
+                <span class="json-key">"metrics"</span>: {<br>
+                &nbsp;&nbsp;<span class="json-prop">"first_contentful_paint"</span>: <span class="json-val-str">"0.38s"</span>,<br>
+                &nbsp;&nbsp;<span class="json-prop">"largest_contentful_paint"</span>: <span class="json-val-str">"0.62s"</span>,<br>
+                &nbsp;&nbsp;<span class="json-prop">"cumulative_layout_shift"</span>: <span class="json-val-str">"0.000"</span><br>
                 }
             </div>
         </div>
@@ -83,12 +83,12 @@ get_header();
             </ul>
         </div>
         <div class="deep-dive-visual">
-            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet-light); margin-bottom: 10px;">// architecture-overview</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.7;">
-                • Edge CDN Caching (Cloudflare Global Anycast)<br>
-                • Server-Side Rendering (Next.js / Node.js Engine)<br>
-                • Headless Data Layer (WordPress Rest API + MySQL 8.0)<br>
-                • Redis Object Cache & Automated Session Pooling
+            <div class="terminal-title">// architecture-overview</div>
+            <div class="terminal-body">
+                • <span class="json-key">Edge CDN Caching:</span> Cloudflare Global Anycast<br>
+                • <span class="json-key">Server-Side Rendering:</span> Next.js / Node.js Engine<br>
+                • <span class="json-key">Headless Data Layer:</span> WordPress REST API + MySQL 8.0<br>
+                • <span class="json-key">High Availability:</span> Redis Object Cache &amp; Automated Session Pooling
             </div>
         </div>
     </div>

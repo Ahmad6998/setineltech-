@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-define('SETINEL_TECH_VERSION', '1.8.2');
+define('SETINEL_TECH_VERSION', '1.8.4');
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.

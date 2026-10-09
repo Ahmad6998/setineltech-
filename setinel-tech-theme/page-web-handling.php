@@ -47,13 +47,13 @@ get_header();
             </ul>
         </div>
         <div class="deep-dive-visual">
-            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--emerald-light); margin-bottom: 10px;">// setinel-handling-daemon.log</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6;">
-                10:42:01 [DAEMON] Ping check completed: 200 OK (TTFB: 42ms)<br>
-                10:42:03 [BACKUP] S3 Snapshot created: setinel-db-auto.sql.enc<br>
-                10:42:05 [WAF] Blocked 14 malicious SQL injection attempts (Cloudflare)<br>
-                10:42:09 [CACHE] Redis hit ratio: <span style="color: #34d399;">98.6%</span><br>
-                10:42:15 [STATUS] System Health: <span style="color: #34d399;">ALL SYSTEMS NOMINAL</span>
+            <div class="terminal-title">// setinel-handling-daemon.log</div>
+            <div class="terminal-body">
+                10:42:01 <span class="json-key">[DAEMON]</span> Ping check completed: <span class="json-val-num">200 OK</span> (TTFB: 42ms)<br>
+                10:42:03 <span class="json-key">[BACKUP]</span> S3 Snapshot created: <span class="json-prop">setinel-db-auto.sql.enc</span><br>
+                10:42:05 <span class="json-key">[WAF]</span> Blocked 14 malicious SQL injection attempts<br>
+                10:42:09 <span class="json-key">[CACHE]</span> Redis hit ratio: <span class="json-val-num">98.6%</span><br>
+                10:42:15 <span class="json-key">[STATUS]</span> System Health: <span class="json-val-num">ALL SYSTEMS NOMINAL</span>
             </div>
         </div>
     </div>

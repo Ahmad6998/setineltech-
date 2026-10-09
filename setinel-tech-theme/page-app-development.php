@@ -43,13 +43,13 @@ get_header();
             </ul>
         </div>
         <div class="deep-dive-visual">
-            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--emerald-light); margin-bottom: 10px;">// mobile-runtime-health.sh</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.6;">
-                [BUILD] Target: iOS (App Store) & Android (AAB Play)<br>
-                [METRIC] FPS Render Rate: <span style="color: #34d399;">60.0 FPS Stable</span><br>
-                [MEMORY] RAM Usage: <span style="color: #34d399;">42MB (Low footprint)</span><br>
-                [OFFLINE] SQLite Sync Status: <span style="color: #a78bfa;">100% Synchronized</span><br>
-                [AUTH] FaceID / Fingerprint Bridge: <span style="color: #34d399;">Active</span>
+            <div class="terminal-title">// mobile-runtime-health.sh</div>
+            <div class="terminal-body">
+                <span class="json-key">[BUILD]</span> Target: <span class="json-prop">iOS (App Store) &amp; Android (AAB Play)</span><br>
+                <span class="json-key">[METRIC]</span> FPS Render Rate: <span class="json-val-num">60.0 FPS Stable</span><br>
+                <span class="json-key">[MEMORY]</span> RAM Usage: <span class="json-val-num">42MB (Low footprint)</span><br>
+                <span class="json-key">[OFFLINE]</span> SQLite Sync Status: <span class="json-val-str">100% Synchronized</span><br>
+                <span class="json-key">[AUTH]</span> FaceID / Biometrics Bridge: <span class="json-val-num">Active</span>
             </div>
         </div>
     </div>
@@ -77,13 +77,13 @@ get_header();
             </ul>
         </div>
         <div class="deep-dive-visual">
-            <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--violet-light); margin-bottom: 10px;">// app-delivery-phases</div>
-            <div style="background: rgba(0,0,0,0.5); padding: 18px; border-radius: 8px; font-size: 0.85rem; color: #cbd5e1; line-height: 1.7;">
-                1. UX Flow & Interactive Figma Prototypes<br>
-                2. Core Architecture, API Contracts & State Management<br>
-                3. Device Hardware Integration (Camera, GPS, Biometrics)<br>
-                4. Automated Device Cloud Testing (iOS & Android devices)<br>
-                5. App Store & Google Play Launch Deployment
+            <div class="terminal-title">// app-delivery-phases</div>
+            <div class="terminal-body">
+                1. <span class="json-key">UX Flow:</span> Interactive Figma Prototypes<br>
+                2. <span class="json-key">Core Architecture:</span> API Contracts &amp; State Management<br>
+                3. <span class="json-key">Hardware Integration:</span> Camera, GPS &amp; Biometrics<br>
+                4. <span class="json-key">Automated Cloud QA:</span> Real Device Farm Verification<br>
+                5. <span class="json-key">Store Deployment:</span> App Store &amp; Google Play Direct Launch
             </div>
         </div>
     </div>
